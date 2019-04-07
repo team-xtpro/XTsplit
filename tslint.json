@@ -1,0 +1,48 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-standard",
+        "tslint-react"
+    ],
+    "rules": {
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "no-floating-promises": false,
+        "ter-indent": [
+            true,
+            4
+        ],
+        "semicolon": [
+            true,
+            "always"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "avoid-template",
+            "avoid-escape",
+            "jsx-double"
+        ],
+        "space-before-function-paren": [
+            true,
+            "never"
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "always",
+                "singleline": "never"
+            }
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "config/**/*.js",
+            "node_modules/**/*.ts",
+            "coverage/lcov-report/*.js"
+        ]
+    }
+}
