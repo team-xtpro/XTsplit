@@ -10,6 +10,7 @@
             "spaces",
             4
         ],
+        "no-floating-promises": false,
         "ter-indent": [
             true,
             4
