@@ -13,7 +13,10 @@
         "no-floating-promises": false,
         "ter-indent": [
             true,
-            4
+            4,
+            {
+                "SwitchCase": 1
+            }
         ],
         "semicolon": [
             true,
@@ -28,7 +31,11 @@
         ],
         "space-before-function-paren": [
             true,
-            "never"
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
         ],
         "trailing-comma": [
             true,
