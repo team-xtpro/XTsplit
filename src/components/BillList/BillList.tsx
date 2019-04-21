@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import IBill from '../types/IBill';
+import IBill from '../../types/IBill';
+import BillListItem from '../BillListItem/BillListItem';
 
 const mapStateToProps = (state: any) => {
     return { bills: state.bills };
@@ -16,7 +17,7 @@ class BillList extends React.Component<any, IBillListState> {
         const { bills } = this.props;
         return (
             <ul>
-                {bills.map((bill: any) => <li key={bill.id}>{bill.title}</li>)}
+                {bills.map((bill: any) => <BillListItem key={bill.id} bill={bill} />)}
             </ul>
         );
     }
