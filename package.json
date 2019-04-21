@@ -32,6 +32,9 @@
         "not op_mini all"
     ],
     "devDependencies": {
+        "@types/react-redux": "^7.0.8",
+        "@types/redux": "^3.6.0",
+        "react-redux": "^7.0.2",
         "tslint": "^5.15.0",
         "tslint-config-standard": "^8.0.1",
         "tslint-react": "^4.0.0"
